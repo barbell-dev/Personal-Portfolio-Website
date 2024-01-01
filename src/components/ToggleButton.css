@@ -1,0 +1,52 @@
+/* Your CSS file, e.g., ToggleButton.css */
+
+body {
+  transition: background-color 0.3s, color 0.3s; /* Add a transition for smooth color change */
+}
+
+body.dark-mode-body {
+  background-color: #000;
+  transition: background-color 0.3s, color 0.3s; /* Add a transition for smooth color change */
+}
+
+body.dark-mode-body .navbar {
+  color: #fff !important; /* Change the color to white */
+}
+
+body.dark-mode-body .navbar-field {
+  color: #fff !important; /* Change the color to white */
+}
+
+body.dark-mode-body .home-text-1 {
+  color: antiquewhite;
+}
+
+body.dark-mode-body .home-text-2 {
+  color: #fff;
+}
+body.dark-mode-body .home-text-3 {
+  color: antiquewhite;
+}
+
+.toggle-button {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333; /* Add a 2px solid border with color #333 */
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  top: 55px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add a transition for smooth changes */
+}
+
+.toggle-button.dark-mode {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff; /* Change the border color to white in dark mode */
+}

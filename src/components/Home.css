@@ -1,0 +1,78 @@
+/* Your CSS file, e.g., Home.css */
+
+img {
+  border-radius: 50%; /* Make the image circular */
+  width: 300px; /* Set the width of the image */
+  height: 300px; /* Set the height of the image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  position: absolute;
+  left: 560px;
+  top: 200px;
+}
+
+.home-text {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+}
+
+.home-text-1 {
+  white-space: nowrap;
+  position: absolute;
+  left: 1090px;
+  top: 120px;
+  font-size: 18px;
+  color: dimgrey;
+}
+
+.home-text-2 {
+  white-space: nowrap;
+  position: absolute;
+  left: 1050px;
+  top: 150px;
+  font-size: 24px; /* Adjust the font size for home-text-2 */
+  font-weight: bold; /* Make home-text-2 bold */
+}
+
+.home-text-3 {
+  white-space: nowrap;
+  position: absolute;
+  left: 1035px;
+  top: 200px;
+  font-size: 20px; /* Adjust the font size for home-text-3 */
+  color: dimgrey;
+}
+.cv,
+.contact {
+  border-radius: 5px; /* Smaller border-radius for a smoother look */
+  width: 120px;
+  height: 40px; /* Increased height for better visibility */
+  background-color: #3498db; /* Set a background color */
+  color: #fff; /* Text color */
+  font-family: "Poppins", sans-serif;
+  font-size: 13px; /* Font size */
+  text-align: center; /* Center-align the text */
+  cursor: pointer;
+  position: absolute;
+}
+.cv:hover,
+.contact:hover {
+  background-color: #2980b9; /* Darker background color on hover */
+}
+.cv {
+  position: absolute;
+  top: 440px;
+  left: 1020px;
+  font-family: "Poppins", sans-serif;
+}
+.contact {
+  position: absolute;
+  top: 440px;
+  left: 1145px;
+
+  font-family: "Poppins", sans-serif;
+}
+.icon-link {
+  position: absolute;
+  left: 1130px;
+  top: 500px;
+}

@@ -1,0 +1,40 @@
+/* Your CSS file, e.g., Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: black;
+}
+
+.name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  font-size: xx-large;
+  position: relative;
+  left: 240px;
+  /* top: 10px; */
+}
+.name:hover {
+  cursor: default;
+}
+.navbar-links {
+  display: flex;
+}
+
+.navbar-field {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  cursor: pointer;
+  font-size: x-large;
+  right: 260px;
+  padding: 30px;
+  position: relative;
+}
+
+.navbar-field:hover {
+  color: cadetblue;
+}
