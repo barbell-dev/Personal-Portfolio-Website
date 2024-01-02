@@ -52,7 +52,7 @@ body.dark-mode-body #about-2 {
   align-items: center;
   position: absolute;
   right: 100px;
-  top: 55px;
+  top: 40px;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add a transition for smooth changes */
 }
 
