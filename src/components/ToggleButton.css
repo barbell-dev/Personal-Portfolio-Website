@@ -27,7 +27,18 @@ body.dark-mode-body .home-text-2 {
 body.dark-mode-body .home-text-3 {
   color: antiquewhite;
 }
+body.dark-mode-body .navbar-field:hover {
+  color: aqua !important; /* Change the hover color to cadetblue */
+  text-decoration: underline;
+}
 
+body.dark-mode-body #about-1 {
+  color: antiquewhite;
+}
+
+body.dark-mode-body #about-2 {
+  color: antiquewhite;
+}
 .toggle-button {
   background-color: #fff;
   color: #333;

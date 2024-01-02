@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ToggleButton from "./components/ToggleButton";
+import About from "./components/About";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <ToggleButton />
       <Navbar />
       <Home />
+      <About />
     </div>
   );
 }

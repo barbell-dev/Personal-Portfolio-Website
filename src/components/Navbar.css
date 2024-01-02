@@ -37,4 +37,5 @@
 
 .navbar-field:hover {
   color: cadetblue;
+  text-decoration: underline;
 }
