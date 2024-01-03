@@ -1,0 +1,16 @@
+.education-section {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+}
+#almamater {
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+#university {
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}

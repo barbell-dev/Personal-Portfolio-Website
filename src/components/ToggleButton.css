@@ -46,7 +46,9 @@ body.dark-mode-body #node-icon,
 body.dark-mode-body #git-icon,
 body.dark-mode-body #github-icon,
 body.dark-mode-body #git-heading,
-body.dark-mode-body #github-heading {
+body.dark-mode-body #github-heading,
+body.dark-mode-body #university,
+body.dark-mode-body #almamater {
   color: antiquewhite;
 }
 body.dark-mode-body #react-icon:hover {

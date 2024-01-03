@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ToggleButton from "./components/ToggleButton";
 import About from "./components/About";
+import Education from "./components/Education";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Education />
     </div>
   );
 }
