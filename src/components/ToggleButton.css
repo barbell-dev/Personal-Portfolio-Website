@@ -48,9 +48,16 @@ body.dark-mode-body #github-icon,
 body.dark-mode-body #git-heading,
 body.dark-mode-body #github-heading,
 body.dark-mode-body #university,
-body.dark-mode-body #almamater {
+body.dark-mode-body #almamater,
+body.dark-mode-body #program,
+body.dark-mode-body #stream,
+body.dark-mode-body #gpa-10,
+body.dark-mode-body #gpa-5,
+body.dark-mode-body #header-1,
+body.dark-mode-body #header-2 {
   color: antiquewhite;
 }
+
 body.dark-mode-body #react-icon:hover {
   color: aqua;
 }
@@ -69,6 +76,10 @@ body.dark-mode-body #git-icon:hover {
 body.dark-mode-body #github-icon:hover {
   color: darkorchid;
 }
+body.dark-mode-body #icon-link:hover {
+  color: red;
+}
+
 .toggle-button {
   background-color: #fff;
   color: #333;

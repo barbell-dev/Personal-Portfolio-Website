@@ -6,6 +6,19 @@ export default function Home() {
       "https://drive.google.com/file/d/1uJ7HaOt_tzYPaB8Y80PsTBoXUd1GMIqz/view";
     window.open(cv_url, "_blank");
   };
+  const dropEmail = () => {
+    const emailAddress = "varun.dunna2524@gmail.com"; // Replace with your email address
+    const subject = "";
+    const body = "";
+
+    // Create a "mailto" link with the email address, subject, and body
+    const mailtoLink = `mailto:${encodeURIComponent(
+      emailAddress
+    )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the default email client with the "mailto" link
+    window.location.href = mailtoLink;
+  };
   return (
     <div>
       <img
@@ -22,7 +35,9 @@ export default function Home() {
         <button className="cv" onClick={downloadcv}>
           Download CV
         </button>
-        <button className="contact">Contact</button>
+        <button className="contact" onClick={dropEmail}>
+          Email
+        </button>
         <a
           href="https://github.com/barbell-dev"
           target="_blank"

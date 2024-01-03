@@ -76,3 +76,6 @@
   left: 1130px;
   top: 500px;
 }
+.icon-link:hover {
+  color: red;
+}
