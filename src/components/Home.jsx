@@ -1,4 +1,5 @@
 import "./Home.css";
+
 export default function Home() {
   const downloadcv = () => {
     const cv_url =
@@ -7,7 +8,11 @@ export default function Home() {
   };
   return (
     <div>
-      <img src={process.env.PUBLIC_URL + "/photo-1.jpg"} alt="photograph-1" />
+      <img
+        src={process.env.PUBLIC_URL + "/photo-1.jpg"}
+        alt="photograph-1"
+        id="image-1"
+      />
       <div className="home-text">
         <p className="home-text-1">Hello, I'm</p>
         <p className="home-text-2">Varun Dunna</p>

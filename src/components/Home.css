@@ -1,6 +1,6 @@
 /* Your CSS file, e.g., Home.css */
 
-img {
+#image-1 {
   border-radius: 50%; /* Make the image circular */
   width: 300px; /* Set the width of the image */
   height: 300px; /* Set the height of the image */
@@ -10,6 +10,15 @@ img {
   top: 200px;
 }
 
+#image-2 {
+  border-radius: 10%; /* Make the image circular */
+  width: 300px; /* Set the width of the image */
+  height: 300px; /* Set the height of the image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  position: absolute;
+  left: 300px;
+  top: 1100px;
+}
 .home-text {
   font-family: "Poppins", sans-serif;
   position: absolute;

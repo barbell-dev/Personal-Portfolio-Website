@@ -1,7 +1,10 @@
 .about {
   /* Remove absolute positioning */
-  margin-top: 800px; /* Adjust the top margin instead of top position */
+  width: 100vw;
+  height: 100vh;
+  margin-top: 690px; /* Adjust the top margin instead of top position */
   margin-left: 700px; /* Adjust the left margin instead of left position */
+  padding-top: 10px;
 }
 
 .aboutme-heading {
