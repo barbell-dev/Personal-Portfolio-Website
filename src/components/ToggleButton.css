@@ -40,10 +40,33 @@ body.dark-mode-body #react-icon,
 body.dark-mode-body #javascript-icon,
 body.dark-mode-body #javascript-heading,
 body.dark-mode-body #mysql-icon,
-body.dark-mode-body #mysql-heading {
+body.dark-mode-body #mysql-heading,
+body.dark-mode-body #node-heading,
+body.dark-mode-body #node-icon,
+body.dark-mode-body #git-icon,
+body.dark-mode-body #github-icon,
+body.dark-mode-body #git-heading,
+body.dark-mode-body #github-heading {
   color: antiquewhite;
 }
-
+body.dark-mode-body #react-icon:hover {
+  color: aqua;
+}
+body.dark-mode-body #javascript-icon:hover {
+  color: yellow;
+}
+body.dark-mode-body #mysql-icon:hover {
+  color: darkcyan;
+}
+body.dark-mode-body #node-icon:hover {
+  color: greenyellow;
+}
+body.dark-mode-body #git-icon:hover {
+  color: orangered;
+}
+body.dark-mode-body #github-icon:hover {
+  color: darkorchid;
+}
 .toggle-button {
   background-color: #fff;
   color: #333;

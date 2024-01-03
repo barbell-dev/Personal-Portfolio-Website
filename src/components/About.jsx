@@ -19,8 +19,9 @@ export default function About() {
         id="image-2"
       />
       <p id="about-content">
-        Hey there ! <br />I am a <b>react</b> developer .<br /> I enjoy working
-        out and cycling as they are therapuetic.
+        Hey there ! <br />
+        <br></br>I am a <b>react</b> developer . I enjoy working out and cycling
+        as they are therapuetic.
         <br /> I'd appreciate a good joke as much as a well optimised algorithm
         , Cheers !
         <br />
@@ -47,15 +48,25 @@ export default function About() {
           <b>MySQL</b>
         </p>
         <i id="mysql-icon">
-          <SiMysql size={44} />
+          <SiMysql size={50} />
         </i>
+        <br></br>
+        <p id="node-heading">
+          <b>Node JS</b>
+        </p>
         <i id="node-icon">
           <DiNodejs size={70} />
         </i>
+        <p id="git-heading">
+          <b>Git</b>
+        </p>
         <i id="git-icon">
           <FaGit size={30} />
         </i>
-        <i>
+        <p id="github-heading">
+          <b>GitHub</b>
+        </p>
+        <i id="github-icon">
           <FaSquareGithub size={30}></FaSquareGithub>
         </i>
       </div>

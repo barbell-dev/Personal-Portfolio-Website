@@ -12,38 +12,102 @@
   height: 300px; /* Set the height of the image */
   object-fit: cover; /* Ensure the image covers the entire container */
   position: absolute;
-  left: 300px;
-  top: 1050px;
+  left: 260px;
+  top: 1070px;
 }
-
 #react-heading {
   position: absolute;
-  top: 1200px;
+  top: 1230px;
   color: black;
 }
+
 #react-icon {
-  top: 1214px;
-}
-#react-icon,
-#javascript-icon,
-#mysql-icon {
   position: absolute;
-  left: 800px;
+  left: 780px;
+  top: 1244px;
+  animation: rotate 5s linear infinite; /* Adjust duration and timing as needed */
+  transform-origin: center; /* Set the transform origin to the center */
+}
+#react-icon:hover {
+  color: aqua;
+}
+#javascript-icon:hover {
+  color: yellow;
+}
+
+#node-icon:hover {
+  color: greenyellow;
+}
+
+#git-icon:hover {
+  color: orangered;
+}
+
+#github-icon:hover {
+  color: blueviolet;
+}
+#mysql-icon:hover {
+  color: darkcyan;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 #javascript-heading {
   position: absolute;
-  top: 1250px;
-}
-#javascript-icon {
-  top: 1260px;
-}
-#mysql-icon {
-  top: 1300px;
+  left: 920px;
+  top: 1230px;
 }
 #mysql-heading {
   position: absolute;
-  top: 1300px;
+  left: 1180px;
+  top: 1230px;
 }
+#node-heading {
+  position: absolute;
+  top: 1290px;
+}
+#git-heading {
+  position: absolute;
+  top: 1290px;
+  left: 920px;
+}
+#javascript-icon {
+  position: absolute;
+  top: 1243px;
+  left: 1030px;
+}
+
+#mysql-icon {
+  position: absolute;
+  top: 1230px;
+  left: 1280px;
+}
+#node-icon {
+  position: absolute;
+  top: 1280px;
+  left: 780px;
+}
+#git-icon {
+  position: absolute;
+  left: 1030px;
+  top: 1302px;
+}
+#github-icon {
+  position: absolute;
+  top: 1300px;
+  left: 1290px;
+}
+#github-heading {
+  position: absolute;
+  top: 1290px;
+  left: 1180px;
+}
+
 #about-content {
   position: absolute;
   left: 700px;
