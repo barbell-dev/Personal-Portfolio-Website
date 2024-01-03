@@ -6,7 +6,44 @@
   margin-left: 700px; /* Adjust the left margin instead of left position */
   padding-top: 10px;
 }
+#image-2 {
+  border-radius: 10%; /* Make the image circular */
+  width: 300px; /* Set the width of the image */
+  height: 300px; /* Set the height of the image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  position: absolute;
+  left: 300px;
+  top: 1050px;
+}
 
+#react-heading {
+  position: absolute;
+  top: 1280px;
+  color: black;
+}
+#react-icon {
+  top: 1293px;
+}
+#react-icon,
+#javascript-icon {
+  position: absolute;
+  left: 800px;
+}
+#javascript-heading {
+  position: absolute;
+  top: 1320px;
+}
+#javascript-icon {
+  top: 1330px;
+}
+#about-content {
+  position: absolute;
+  left: 700px;
+  top: 1100px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  justify-self: center;
+}
 .aboutme-heading {
   font-size: large;
   font-weight: bold;

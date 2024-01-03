@@ -32,13 +32,14 @@ body.dark-mode-body .navbar-field:hover {
   text-decoration: underline;
 }
 
-body.dark-mode-body #about-1 {
+body.dark-mode-body #about-1,
+body.dark-mode-body #about-2,
+body.dark-mode-body #about-content,
+body.dark-mode-body #react-heading,
+body.dark-mode-body #react-icon {
   color: antiquewhite;
 }
 
-body.dark-mode-body #about-2 {
-  color: antiquewhite;
-}
 .toggle-button {
   background-color: #fff;
   color: #333;
