@@ -18,28 +18,36 @@
 
 #react-heading {
   position: absolute;
-  top: 1280px;
+  top: 1200px;
   color: black;
 }
 #react-icon {
-  top: 1293px;
+  top: 1214px;
 }
 #react-icon,
-#javascript-icon {
+#javascript-icon,
+#mysql-icon {
   position: absolute;
   left: 800px;
 }
 #javascript-heading {
   position: absolute;
-  top: 1320px;
+  top: 1250px;
 }
 #javascript-icon {
-  top: 1330px;
+  top: 1260px;
+}
+#mysql-icon {
+  top: 1300px;
+}
+#mysql-heading {
+  position: absolute;
+  top: 1300px;
 }
 #about-content {
   position: absolute;
   left: 700px;
-  top: 1100px;
+  top: 1050px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
   justify-self: center;

@@ -33,7 +33,7 @@ export default function About() {
           <b>React</b>
         </p>
         <i id="react-icon">
-          <FaReact size={30} />
+          <FaReact size={33} />
         </i>
         <br></br>
         <p id="javascript-heading">
@@ -42,8 +42,12 @@ export default function About() {
         <i id="javascript-icon">
           <IoLogoJavascript size={30} />
         </i>
+        <br></br>
+        <p id="mysql-heading">
+          <b>MySQL</b>
+        </p>
         <i id="mysql-icon">
-          <SiMysql size={40} />
+          <SiMysql size={44} />
         </i>
         <i id="node-icon">
           <DiNodejs size={70} />
