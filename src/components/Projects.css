@@ -14,3 +14,127 @@
   font-size: xx-large;
   font-weight: bold;
 }
+.project-box {
+  border: 3px solid #555; /* Set the border color and thickness */
+  height: 400px; /* Set the desired height */
+  width: 300px;
+  position: relative;
+  top: 100px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+p {
+  cursor: auto !important;
+}
+#project-1 {
+  margin-left: 200px;
+}
+#project-2 {
+  top: -305px;
+  margin-left: 700px;
+}
+#project-3 {
+  top: -710px;
+  margin-left: 1200px;
+}
+#unicollab-img {
+  width: 300px;
+  position: absolute;
+  top: -10px;
+  /* padding-right: 20px; */
+
+  border-radius: 20px 20px 20px 20px;
+  left: -170px;
+  right: 30px;
+}
+#unicollab-heading {
+  position: absolute;
+  top: 240px;
+  left: 90px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+#unicollab-github {
+  position: absolute;
+  top: 320px;
+  left: 110px;
+  font-family: "Poppins", sans-serif;
+
+  font-size: large;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#unicollab-github:hover {
+  background-color: red;
+  color: white;
+}
+#wealth-management-system-img {
+  width: 300px;
+  position: absolute;
+  top: -10px;
+  border-radius: 20px;
+  left: -170px;
+  right: 30px;
+}
+
+#wealth-management-system-heading {
+  position: absolute;
+  top: 246px;
+  left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  white-space: nowrap; /* Prevent line breaks */
+}
+#wealth-management-system-github {
+  position: absolute;
+  top: 320px;
+  left: 110px;
+  font-family: "Poppins", sans-serif;
+
+  font-size: large;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#wealth-management-system-github:hover {
+  background-color: red;
+  color: white;
+}
+#dragon-rpg-img {
+  width: 300px;
+  position: absolute;
+  top: -10px;
+  /* padding-right: 20px; */
+
+  border-radius: 20px 20px 20px 20px;
+  left: -170px;
+  right: 30px;
+}
+#dragon-rpg-heading {
+  position: absolute;
+  top: 240px;
+  left: 27px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  white-space: nowrap; /* Prevent line breaks */
+}
+#dragon-rpg-github {
+  position: absolute;
+  top: 320px;
+  left: 110px;
+  font-family: "Poppins", sans-serif;
+
+  font-size: large;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#dragon-rpg-github:hover {
+  background-color: red;
+  color: white;
+}

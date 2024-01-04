@@ -6,7 +6,7 @@ export default function Education() {
         <p id="almamater">My Alma Mater</p>
       </header>
       <section className="university">
-        <p id="university">PES University(Ring Road Campus)</p>
+        <p id="university">PES University - Ring Road Campus</p>
         <img
           src="https://images.collegedunia.com/public/college_data/images/campusimage/1434627666campusr.jpg"
           alt="university-photograph"
@@ -26,6 +26,23 @@ export default function Education() {
           GPA
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
           &nbsp;3.8&nbsp;&nbsp;(5 pointer scale)
+        </p>
+      </section>
+      <section className="school">
+        <p id="school">HAL PUBLIC SCHOOL</p>
+        <img
+          src="https://halec.co.in/assets/images/hal_school2.jpg"
+          alt="school-photograph"
+          id="school-img"
+        />
+        <p id="class-12">
+          AISSCE(Class - XII) :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 92.8%
+        </p>
+
+        <p id="class-10">
+          AISSE(Class - X)
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          91.2%
         </p>
       </section>
     </div>

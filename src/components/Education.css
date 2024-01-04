@@ -16,29 +16,62 @@
   text-align: center;
 }
 img {
-  height: 400px;
+  height: 240px;
   position: relative;
-  margin-left: 50px;
+  margin-left: 170px;
   border-radius: 20px;
+  margin-top: 10px;
 }
 #program {
   position: relative;
   margin-left: 900px;
-  margin-top: -350px;
+  margin-top: -240px;
   font-weight: bold;
 }
 #stream {
   position: relative;
   margin-left: 900px;
   font-weight: bold;
+  margin-top: -5px;
 }
 #gpa-10 {
   position: relative;
   margin-left: 900px;
   font-weight: bold;
+  margin-top: -5px;
 }
 #gpa-5 {
   position: absolute;
   margin-left: 900px;
   font-weight: bold;
+  margin-top: -5px;
+}
+#school {
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+#school-img {
+  position: relative;
+  height: 240px;
+}
+
+p {
+  cursor: auto !important;
+}
+#class-12 {
+  font-weight: bold;
+  position: relative;
+  margin-left: 900px;
+  top: -200px;
+}
+
+#class-10 {
+  font-weight: bold;
+  position: relative;
+  margin-left: 900px;
+  top: -180px;
 }

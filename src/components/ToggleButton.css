@@ -54,7 +54,13 @@ body.dark-mode-body #stream,
 body.dark-mode-body #gpa-10,
 body.dark-mode-body #gpa-5,
 body.dark-mode-body #header-1,
-body.dark-mode-body #header-2 {
+body.dark-mode-body #header-2,
+body.dark-mode-body #school,
+body.dark-mode-body #class-12,
+body.dark-mode-body #class-10,
+body.dark-mode-body #unicollab-heading,
+body.dark-mode-body #wealth-management-system-heading,
+body.dark-mode-body #dragon-rpg-heading {
   color: antiquewhite;
 }
 
@@ -79,7 +85,25 @@ body.dark-mode-body #github-icon:hover {
 body.dark-mode-body #icon-link:hover {
   color: red;
 }
+body.dark-mode-body .project-box {
+  border: 3px solid cyan;
+}
+body.dark-mode-body #unicollab-github,
+body.dark-mode-body #wealth-management-system-github,
+body.dark-mode-body #dragon-rpg-github {
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
+}
 
+body.dark-mode-body #unicollab-github:hover,
+body.dark-mode-body #wealth-management-system-github:hover,
+body.dark-mode-body #dragon-rpg-github:hover {
+  background-color: rgb(0, 255, 255);
+}
+body.dark-mode-body p {
+  cursor: auto !important;
+}
 .toggle-button {
   background-color: #fff;
   color: #333;

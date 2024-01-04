@@ -6,14 +6,18 @@
   margin-left: 700px; /* Adjust the left margin instead of left position */
   padding-top: 10px;
 }
+
+.about p {
+  cursor: auto !important;
+}
 #image-2 {
   border-radius: 10%; /* Make the image circular */
   width: 300px; /* Set the width of the image */
   height: 300px; /* Set the height of the image */
   object-fit: cover; /* Ensure the image covers the entire container */
   position: absolute;
-  left: 260px;
-  top: 1070px;
+  left: 100px;
+  top: 1040px;
 }
 #react-heading {
   position: absolute;
