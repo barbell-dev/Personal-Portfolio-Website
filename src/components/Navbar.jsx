@@ -42,7 +42,7 @@ export default function Navbar() {
           className="navbar-field"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={0}
           duration={800}
         >
           Contact

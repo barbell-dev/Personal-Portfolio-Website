@@ -5,7 +5,7 @@ body {
 }
 
 body.dark-mode-body {
-  background-color: #000;
+  background-color: #333;
   transition: background-color 0.3s, color 0.3s; /* Add a transition for smooth color change */
 }
 
@@ -60,13 +60,22 @@ body.dark-mode-body #class-12,
 body.dark-mode-body #class-10,
 body.dark-mode-body #unicollab-heading,
 body.dark-mode-body #wealth-management-system-heading,
-body.dark-mode-body #dragon-rpg-heading {
+body.dark-mode-body #dragon-rpg-heading,
+body.dark-mode-body #getintouch,
+body.dark-mode-body #contact-heading,
+body.dark-mode-body #email-link,
+body.dark-mode-body #discord-link,
+body.dark-mode-body #email-icon,
+body.dark-mode-body #footer {
   color: antiquewhite;
 }
 
-body.dark-mode-body #react-icon:hover {
+body.dark-mode-body #react-icon:hover,
+body.dark-mode-body #email-link:hover,
+body.dark-mode-body #discord-link:hover {
   color: aqua;
 }
+
 body.dark-mode-body #javascript-icon:hover {
   color: yellow;
 }
@@ -82,10 +91,15 @@ body.dark-mode-body #git-icon:hover {
 body.dark-mode-body #github-icon:hover {
   color: darkorchid;
 }
-body.dark-mode-body #icon-link:hover {
+
+body.dark-mode-body .icon-link {
+  color: cyan;
+}
+body.dark-mode-body .icon-link:hover {
   color: red;
 }
-body.dark-mode-body .project-box {
+body.dark-mode-body .project-box,
+body.dark-mode-body #contact-box {
   border: 3px solid cyan;
 }
 body.dark-mode-body #unicollab-github,

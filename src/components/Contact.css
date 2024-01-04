@@ -1,0 +1,74 @@
+.contact-section {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100vw;
+  min-height: 0vh;
+  padding-top: 200px;
+  overflow-y: hidden;
+}
+
+#contact-heading {
+  font-size: xx-large;
+  font-weight: bold;
+}
+#getintouch {
+  font-size: x-large;
+}
+#contact-box {
+  border: 3px solid #555;
+  border-radius: 20px;
+  height: 70px;
+  width: 700px;
+  margin-left: 500px;
+  position: relative;
+  margin-top: 70px;
+}
+.contact-section footer {
+  position: absolute;
+  padding-top: 280px;
+  padding-bottom: 20px;
+  margin-left: 650px;
+}
+#email-icon {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+#email-link {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  font-size: larger;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+#email-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#discord-icon {
+  position: absolute;
+  left: 480px;
+  top: 9px;
+
+  color: blueviolet;
+  transition: transform 0.3s;
+}
+
+#discord-icon:hover {
+  transform: rotate(180deg);
+}
+#discord-link {
+  position: absolute;
+  left: 550px;
+  font-size: larger;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  top: 20px;
+}
+#discord-link:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
