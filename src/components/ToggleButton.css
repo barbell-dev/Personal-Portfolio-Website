@@ -92,7 +92,12 @@ body.dark-mode-body #github-icon:hover {
   color: darkorchid;
 }
 
-body.dark-mode-body .icon-link {
+body.dark-mode-body .icon-link,
+body.dark-mode-body #arrow-home,
+body.dark-mode-body #arrow-about,
+body.dark-mode-body #arrow-education,
+body.dark-mode-body #arrow-projects,
+body.dark-mode-body #arrow-contact {
   color: cyan;
 }
 body.dark-mode-body .icon-link:hover {

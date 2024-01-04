@@ -56,6 +56,17 @@
   transition: transform 0.3s;
 }
 
+#arrow-contact {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 250px;
+  transition: transform 0.3s;
+}
+
+#arrow-contact:hover {
+  transform: translateY(-10px);
+}
 #discord-icon:hover {
   transform: rotate(180deg);
 }

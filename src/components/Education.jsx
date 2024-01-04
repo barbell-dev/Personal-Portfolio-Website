@@ -1,4 +1,7 @@
 import "./Education.css";
+import { Link } from "react-scroll";
+
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 export default function Education() {
   return (
     <div className="education-section">
@@ -45,6 +48,15 @@ export default function Education() {
           91.2%
         </p>
       </section>
+      <Link
+        to="projects-section" // Replace with the ID of the about section
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={800}
+      >
+        <MdOutlineKeyboardDoubleArrowDown size={50} id="arrow-education" />
+      </Link>
     </div>
   );
 }

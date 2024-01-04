@@ -1,7 +1,9 @@
 import "./Contact.css";
 import { FaDiscord } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 
+import { Link } from "react-scroll";
 export default function Contact() {
   const emailAddress = "varun.dunna2524@gmail.com";
   return (
@@ -26,6 +28,15 @@ export default function Contact() {
           </a>{" "}
         </div>
       </div>
+      <Link
+        to="root" // Replace with the ID of the about section
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={800}
+      >
+        <MdOutlineKeyboardDoubleArrowUp size={50} id="arrow-contact" />
+      </Link>
       <footer id="footer">
         Copyright &copy; 2024 Varun Dunna. All rights reserved.
       </footer>

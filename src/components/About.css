@@ -6,7 +6,17 @@
   margin-left: 700px; /* Adjust the left margin instead of left position */
   padding-top: 10px;
 }
+#arrow-about {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 550px;
+  transition: transform 0.3s;
+}
 
+#arrow-about:hover {
+  transform: translateY(10px);
+}
 .about p {
   cursor: auto !important;
 }

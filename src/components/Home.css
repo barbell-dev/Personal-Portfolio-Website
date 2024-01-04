@@ -9,7 +9,17 @@
   left: 320px;
   top: 200px;
 }
+#arrow-home {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 1500px;
+  margin-top: 600px;
+  transition: transform 0.3s;
+}
 
+#arrow-home:hover {
+  transform: translateY(10px);
+}
 p {
   cursor: auto !important;
 }

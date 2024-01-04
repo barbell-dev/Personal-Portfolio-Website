@@ -1,4 +1,7 @@
 import "./Projects.css";
+
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import { Link } from "react-scroll";
 export default function Projects() {
   const unicollabGithub = () => {
     window.open("https://github.com/barbell-dev/unicollab", "_blank");
@@ -55,6 +58,15 @@ export default function Projects() {
           GitHub
         </button>
       </div>
+      <Link
+        to="contact-section" // Replace with the ID of the about section
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={800}
+      >
+        <MdOutlineKeyboardDoubleArrowDown size={50} id="arrow-projects" />
+      </Link>
     </div>
   );
 }

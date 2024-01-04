@@ -5,7 +5,9 @@ import { SiMysql } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { FaGit } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 export default function About() {
   return (
     <div className="about" id="about-section">
@@ -70,6 +72,15 @@ export default function About() {
           <FaSquareGithub size={30}></FaSquareGithub>
         </i>
       </div>
+      <Link
+        to="education-section" // Replace with the ID of the about section
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={800}
+      >
+        <MdOutlineKeyboardDoubleArrowDown size={50} id="arrow-about" />
+      </Link>
     </div>
   );
 }

@@ -24,6 +24,17 @@
   border-radius: 40px;
 }
 
+#arrow-projects {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 1510px;
+  margin-top: -680px;
+  transition: transform 0.3s;
+}
+
+#arrow-projects:hover {
+  transform: translateY(10px);
+}
 p {
   cursor: auto !important;
 }
