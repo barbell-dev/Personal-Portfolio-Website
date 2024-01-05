@@ -1,25 +1,28 @@
+// Home.js
+
+import React from "react";
 import "./Home.css";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { Link } from "react-scroll";
+
 export default function Home() {
   const downloadcv = () => {
     const cv_url =
       "https://drive.google.com/file/d/1uJ7HaOt_tzYPaB8Y80PsTBoXUd1GMIqz/view";
     window.open(cv_url, "_blank");
   };
+
   const dropEmail = () => {
-    const emailAddress = "varun.dunna2524@gmail.com"; // Replace with your email address
+    const emailAddress = "varun.dunna2524@gmail.com";
     const subject = "";
     const body = "";
-
-    // Create a "mailto" link with the email address, subject, and body
     const mailtoLink = `mailto:${encodeURIComponent(
       emailAddress
     )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Open the default email client with the "mailto" link
     window.location.href = mailtoLink;
   };
+
   return (
     <div className="home-section">
       <img
@@ -49,10 +52,10 @@ export default function Home() {
         </a>
       </div>
       <Link
-        to="about-section" // Replace with the ID of the about section
+        to="about-section"
         spy={true}
         smooth={true}
-        offset={0}
+        offset={-20}
         duration={800}
       >
         <MdOutlineKeyboardDoubleArrowDown size={50} id="arrow-home" />

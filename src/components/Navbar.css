@@ -1,4 +1,13 @@
-/* Your CSS file, e.g., Navbar.css */
+/* Navbar.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
 
 .navbar {
   display: flex;
@@ -6,36 +15,124 @@
   align-items: center;
   padding: 10px;
   color: black;
+  font-size: large;
 }
 
 .name {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-
   font-size: xx-large;
-  position: relative;
-  left: 240px;
-  /* top: 10px; */
+  margin-left: 20px;
 }
-.name:hover {
-  cursor: default;
-}
+
 .navbar-links {
   display: flex;
 }
 
 .navbar-field {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   color: black;
   cursor: pointer;
-  font-size: x-large;
-  right: 260px;
-  padding: 30px;
-  position: relative;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
 .navbar-field:hover {
   color: cadetblue;
   text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-field {
+    padding: 15px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid #ddd; /* Add a border between links */
+  }
+
+  .navbar-field:last-child {
+    border-bottom: none; /* Remove border for the last link */
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-field {
+    padding: 15px;
+    text-align: center;
+    color: black;
+    width: 100%;
+  }
+
+  .navbar-field:hover {
+    background-color: #ddd;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }

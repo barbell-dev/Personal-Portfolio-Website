@@ -144,3 +144,25 @@
   font-family: "Poppins", sans-serif;
   font-size: x-large;
 }
+@media only screen and (max-width: 768px) {
+  .aboutme-heading {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    left: 130px;
+    top: 123%;
+    transform: translateY(-50%);
+  }
+  #about-1 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    left: 110px;
+    top: 113%;
+    transform: translateY(-50%);
+  }
+}
