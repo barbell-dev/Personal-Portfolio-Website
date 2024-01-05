@@ -87,6 +87,6 @@
 
 /* Additional styles for the shifted content when navbar is clicked */
 .home-section.navbar-clicked {
-  margin-top: 100px; /* Adjust the desired margin */
-  transition: margin-top 0.3s;
+  margin-bottom: 100px; /* Adjust the desired margin */
+  transition: margin-bottom 0.3s;
 }
