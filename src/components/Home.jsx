@@ -38,7 +38,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`home-section ${navClicked % 2 === 0 ? "pushed" : "top"}`}>
+    <div className={`home-section ${navClicked % 2 === 0 ? "top" : "pushed"}`}>
       <img
         src={process.env.PUBLIC_URL + "/photo-1.jpg"}
         alt="photograph-1"
