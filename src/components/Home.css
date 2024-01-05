@@ -1,7 +1,5 @@
 /* Home.css */
-.home-section {
-  overflow-x: hidden;
-}
+
 #image-1 {
   border-radius: 50%;
   width: 300px;
@@ -9,7 +7,7 @@
   object-fit: cover;
   position: absolute;
   left: 50px;
-  margin-top: 100px;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -69,7 +67,6 @@
 .icon-link {
   color: black;
   transition: color 0.3s;
-  text-decoration: none;
 }
 
 .icon-link:hover {
@@ -88,33 +85,8 @@
   transform: translateY(10px);
 }
 
-/* Responsive styles for smaller screens */
-@media only screen and (max-width: 768px) {
-  #image-1 {
-    width: 200px; /* Adjust the width for smaller screens */
-    height: 200px; /* Adjust the height for smaller screens */
-    left: 10%; /* Center the image horizontally */
-    top: 30%;
-
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  .home-text {
-    text-align: center; /* Center the text for smaller screens */
-    left: 50%; /* Center the text horizontally */
-    transform: translateX(-50%) translateY(-50%);
-    top: 60%;
-    max-width: 100%; /* Ensure maximum width is 100% of the viewport */
-  }
-
-  .buttons {
-    left: 55%; /* Center the buttons horizontally */
-    transform: translateX(-50%);
-    bottom: 10px; /* Adjust the bottom position for smaller screens */
-    top: 70%;
-  }
-  .icon-link {
-    top: 80%;
-    left: 50%;
-  }
+/* Additional styles for the shifted content when navbar is clicked */
+.home-section.navbar-clicked {
+  margin-top: 100px; /* Adjust the desired margin */
+  transition: margin-top 0.3s;
 }

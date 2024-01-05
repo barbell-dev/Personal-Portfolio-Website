@@ -1,11 +1,13 @@
 // Home.js
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { Link } from "react-scroll";
 
 export default function Home() {
+  const [navbarClicked, setNavbarClicked] = useState(false);
+
   const downloadcv = () => {
     const cv_url =
       "https://drive.google.com/file/d/1uJ7HaOt_tzYPaB8Y80PsTBoXUd1GMIqz/view";
@@ -23,8 +25,26 @@ export default function Home() {
     window.location.href = mailtoLink;
   };
 
+  useEffect(() => {
+    const handleNavbarClick = () => {
+      setNavbarClicked(true);
+    };
+
+    const handleScroll = () => {
+      setNavbarClicked(false);
+    };
+
+    document.addEventListener("navbarClicked", handleNavbarClick);
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("navbarClicked", handleNavbarClick);
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="home-section">
+    <div className={`home-section ${navbarClicked ? "navbar-clicked" : ""}`}>
       <img
         src={process.env.PUBLIC_URL + "/photo-1.jpg"}
         alt="photograph-1"

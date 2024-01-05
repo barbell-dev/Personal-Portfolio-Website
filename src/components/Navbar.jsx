@@ -9,6 +9,7 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    document.dispatchEvent(new Event("navbarClicked"));
   };
 
   return (
