@@ -9,7 +9,7 @@
   object-fit: cover;
   position: absolute;
   left: 50px;
-  top: 80%;
+  margin-top: 100px;
   transform: translateY(-50%);
 }
 
