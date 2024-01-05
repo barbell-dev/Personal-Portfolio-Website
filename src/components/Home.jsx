@@ -6,7 +6,7 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { Link } from "react-scroll";
 
 export default function Home() {
-  const [navbarClicked, setNavbarClicked] = useState(false);
+  const [navClicked, setNavClicked] = useState(0);
 
   const downloadcv = () => {
     const cv_url =
@@ -27,24 +27,18 @@ export default function Home() {
 
   useEffect(() => {
     const handleNavbarClick = () => {
-      setNavbarClicked(true);
-    };
-
-    const handleScroll = () => {
-      setNavbarClicked(false);
+      setNavClicked((prevNavClicked) => prevNavClicked + 1);
     };
 
     document.addEventListener("navbarClicked", handleNavbarClick);
-    document.addEventListener("scroll", handleScroll);
 
     return () => {
       document.removeEventListener("navbarClicked", handleNavbarClick);
-      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div className={`home-section ${navbarClicked ? "navbar-clicked" : ""}`}>
+    <div className={`home-section ${navClicked % 2 === 0 ? "pushed" : "top"}`}>
       <img
         src={process.env.PUBLIC_URL + "/photo-1.jpg"}
         alt="photograph-1"
