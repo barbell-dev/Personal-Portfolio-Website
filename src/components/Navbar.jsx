@@ -1,19 +1,29 @@
-import React from "react";
+// Navbar.js
+
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    document.dispatchEvent(new Event("navbarClicked"));
+  };
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${menuOpen ? "open" : ""}`}>
       <p className="name">Varun Dunna</p>
-      <div className="navbar-links">
+      <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
         <Link
           to="about-section"
           className="navbar-field"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-20}
           duration={800}
+          onClick={() => setMenuOpen(false)}
         >
           About
         </Link>
@@ -22,8 +32,9 @@ export default function Navbar() {
           className="navbar-field"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-20}
           duration={800}
+          onClick={() => setMenuOpen(false)}
         >
           Education
         </Link>
@@ -32,8 +43,9 @@ export default function Navbar() {
           className="navbar-field"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-20}
           duration={800}
+          onClick={() => setMenuOpen(false)}
         >
           Projects
         </Link>
@@ -42,11 +54,17 @@ export default function Navbar() {
           className="navbar-field"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-20}
           duration={800}
+          onClick={() => setMenuOpen(false)}
         >
           Contact
         </Link>
+      </div>
+      <div className="menu-toggle" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
     </div>
   );

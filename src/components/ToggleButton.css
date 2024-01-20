@@ -145,3 +145,15 @@ body.dark-mode-body p {
   color: #fff;
   border-color: #fff; /* Change the border color to white in dark mode */
 }
+/* ToggleButton.css */
+
+/* Add this media query to handle small screens */
+@media only screen and (max-width: 600px) {
+  .toggle-button {
+    position: static;
+    margin-top: 20px; /* Adjust the margin for better spacing on small screens */
+    margin-right: 0; /* Reset right margin */
+  }
+}
+
+/* Rest of your existing styles remain unchanged */

@@ -1,0 +1,22 @@
+/* App.css */
+
+/* Apply a global box-sizing property for better layout consistency */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Reset default body margin */
+  font-family: "Poppins", sans-serif; /* Use the imported font for the entire app */
+  overflow-x: hidden;
+}
+
+/* Add a media query for better spacing on small screens */
+@media only screen and (max-width: 600px) {
+  .toggle-button {
+    position: static;
+    margin-right: 0;
+  }
+}
+
+/* Your existing styles can be added here if needed */

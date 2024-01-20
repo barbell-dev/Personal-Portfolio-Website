@@ -1,27 +1,44 @@
+// Home.js
+
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { Link } from "react-scroll";
+
 export default function Home() {
+  const [navClicked, setNavClicked] = useState(0);
+
   const downloadcv = () => {
     const cv_url =
       "https://drive.google.com/file/d/1uJ7HaOt_tzYPaB8Y80PsTBoXUd1GMIqz/view";
     window.open(cv_url, "_blank");
   };
+
   const dropEmail = () => {
-    const emailAddress = "varun.dunna2524@gmail.com"; // Replace with your email address
+    const emailAddress = "varun.dunna2524@gmail.com";
     const subject = "";
     const body = "";
-
-    // Create a "mailto" link with the email address, subject, and body
     const mailtoLink = `mailto:${encodeURIComponent(
       emailAddress
     )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Open the default email client with the "mailto" link
     window.location.href = mailtoLink;
   };
+
+  useEffect(() => {
+    const handleNavbarClick = () => {
+      setNavClicked((prevNavClicked) => prevNavClicked + 1);
+    };
+
+    document.addEventListener("navbarClicked", handleNavbarClick);
+
+    return () => {
+      document.removeEventListener("navbarClicked", handleNavbarClick);
+    };
+  }, []);
+
   return (
-    <div className="home-section">
+    <div className={`home-section ${navClicked % 2 === 0 ? "top" : "pushed"}`}>
       <img
         src={process.env.PUBLIC_URL + "/photo-1.jpg"}
         alt="photograph-1"
@@ -49,10 +66,10 @@ export default function Home() {
         </a>
       </div>
       <Link
-        to="about-section" // Replace with the ID of the about section
+        to="about-section"
         spy={true}
         smooth={true}
-        offset={0}
+        offset={-20}
         duration={800}
       >
         <MdOutlineKeyboardDoubleArrowDown size={50} id="arrow-home" />
