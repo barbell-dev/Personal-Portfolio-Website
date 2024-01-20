@@ -49,7 +49,7 @@ export default function Projects() {
       </div>
       <div id="project-3" className="project-box">
         <img
-          src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2019/10/best-dragon-games-1.jpg"
+          src="https://t3.ftcdn.net/jpg/05/73/61/12/360_F_573611237_ibLJMHv2kIV7kBQKtdL8eFxIGRmrDtvA.jpg"
           alt="dragon-rpg-photograph"
           id="dragon-rpg-img"
         />
